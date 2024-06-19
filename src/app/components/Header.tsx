@@ -1,6 +1,5 @@
 import {
   getSignInUrl,
-  getSignUpUrl,
   getUser,
   signOut,
 } from "@workos-inc/authkit-nextjs";
@@ -9,7 +8,6 @@ import Link from "next/link";
 async function Header() {
   const { user } = await getUser();
   const signInUrl = await getSignInUrl();
-  const signOutUrl = await getSignUpUrl();
   console.log(user);
 
   return (

@@ -4,8 +4,8 @@ import {
   getUser,
   signOut,
 } from "@workos-inc/authkit-nextjs";
-import Hero from "@/components/Hero";
-import Jobs from "@/components/Jobs";
+import Hero from "@/app/components/Hero";
+import Jobs from "@/app/components/Jobs";
 
 const Home = async () => {
   // Retrieves the user from the session or returns `null` if no user is signed in
